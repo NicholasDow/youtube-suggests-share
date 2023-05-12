@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Video Sampler",
+    "version": "1.0",
+    "description": "Samples videos watched on YouTube and sends them to a friend.",
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "permissions": [
+      "storage",
+      "http://localhost:3000/*",
+      "http://*youtube.com/*"
+    ]
+  }
