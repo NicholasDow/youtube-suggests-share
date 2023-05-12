@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "YouTube Video Sampler",
     "version": "1.0",
-    "description": "Samples videos watched on YouTube and sends them to a friend.",
+    "description": "Samples videos watched on YouTube",
     "content_scripts": [
       {
         "matches": ["*://*.youtube.com/*"],
